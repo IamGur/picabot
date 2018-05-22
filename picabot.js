@@ -592,7 +592,7 @@ var checkForCommand = function(message){
 			temp = message.content.substring(4);
 		}
 		if(temp !== ""){
-			message.channel.send("Hi " + temp + " Life is a bitch ", {reply: message});
+			message.channel.send("Hi " + temp + ", Life is a bitch ", {reply: message});
 		}
 	}
 }
