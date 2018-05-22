@@ -592,7 +592,7 @@ var checkForCommand = function(message){
 			temp = message.content.substring(4);
 		}
 		if(temp !== ""){
-			message.channel.send("Hi " + temp + ", I'm dad.", {reply: message});
+			message.channel.send("Hi " + temp + ", I'm @BG#5424.", {reply: message});
 		}
 	}
 }
