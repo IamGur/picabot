@@ -617,6 +617,8 @@ bot.on("messageUpdate", function(oldMessage, newMessage){
 
 bot.login(process.env.BOTTOKEN).then(function(){
 	console.log("Bot logged in");
+	bot.channels.get('475564126140104704').send(`**Bot Logged in as ${client.user.tag}\, ${client.guilds.size} Servers \, ${client.users.size} Users Dav-ID:${Dav} !** `);
+        bot.user.setPresence({ game: { name: `${Status}`, url: 'https://twitch.tv/....', type: 1 } });
 }).catch(console.log);
 
 fs.readFile("save.json", function(err, data){
