@@ -29,8 +29,8 @@ var commands = {
 					commandList += `\`${commandKeys[i]}\`, `;
 				}
 				commandList += `and \`${commandKeys[commandKeys.length - 1]}\``;
-				botChannel.send("My current commands are: " + commandList, {reply: message});
-				botChannel.send(`You can use \`${prefix}help <command>\` to learn more about a command!`);
+				message.channel.send("My current commands are: " + commandList, {reply: message});
+				message.channel.send(`You can use \`${prefix}help <command>\` to learn more about a command!`);
 			} else{
 				var helpList = "";
 				if(args[0] === "-a" || args[0] === "--all"){
@@ -46,7 +46,7 @@ var commands = {
 						}
 					}
 				}
-				botChannel.send(helpList, {reply: message});
+				message.channel.send(helpList, {reply: message});
 			}
 		}
 	},
